@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 # Bundle app source
 COPY src /app
 
-CMD [ "python", "main.py" ]
+CMD [ "pip install --upgrade html5lib==1.0b8 ;" ,"python", "main.py" ]
