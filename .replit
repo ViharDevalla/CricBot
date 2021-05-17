@@ -1,0 +1,1 @@
+run="pip install --upgrade html5lib==1.0b8 ; python main.py"
