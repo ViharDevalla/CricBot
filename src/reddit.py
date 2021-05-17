@@ -72,8 +72,3 @@ def get_reddit_text2(subreddit,listing,limit,timeframe):
             text = r['data']['children'][i]['data']['title']
             l.append([text,i])
     return '\n'.join(r['data']['children'][l[1][1]]['data']['selftext'].split('\n')[4:-4])
-
-def stackoverflow(ques):
-{
-  return("Hello There")
-}

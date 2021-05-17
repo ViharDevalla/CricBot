@@ -5,11 +5,14 @@ import discord
 import requests
 import random
 from discord_slash import SlashCommand, SlashContext
+import dotenv
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 
 
-
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 from discord.ext import commands
 
 intents = discord.Intents().all()
@@ -506,5 +509,5 @@ def check3(msg3):
 def check4(msg4):
     return int(msg4.content) in [1,2,3,4,5,6]
 
-keep_alive()
+#keep_alive()
 bot.run(os.environ['TOKEN'])
