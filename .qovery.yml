@@ -1,0 +1,11 @@
+---
+application:
+  name: "cricbot"
+  project: "cricbot"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-cricbot"
+  routes:
+  - application_name: "cricbot"
+    paths:
+    - "/*"
